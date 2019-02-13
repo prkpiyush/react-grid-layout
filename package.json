@@ -48,7 +48,6 @@
     "babel-eslint": "^8.2.1",
     "babel-jest": "^22.2.2",
     "babel-loader": "^7.1.2",
-    "babel-plugin-espower": "^2.4.0",
     "babel-plugin-react-transform": "^3.0.0",
     "babel-plugin-transform-react-constant-elements": "^6.5.0",
     "babel-plugin-transform-react-inline-elements": "^6.6.5",
@@ -70,7 +69,6 @@
     "lint-staged": "^6.1.0",
     "lodash": "^4.17.5",
     "opener": "^1.4.3",
-    "power-assert": "^1.4.4",
     "prettier": "^1.10.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -78,8 +76,9 @@
     "react-transform-hmr": "^1.0.2",
     "style-loader": "^0.20.2",
     "valiquire": "^0.3.0",
-    "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1"
+    "webpack": "^4.0.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.11"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
@@ -87,7 +86,8 @@
   "jest": {
     "testMatch": [
       "<rootDir>/test/spec/*.js"
-    ]
+    ],
+    "testURL": "http://localhost"
   },
   "lint-staged": {
     "*.{js,jsx}": [
